@@ -39,6 +39,8 @@ const Auth = () => {
   const handleSubmit = (e) => {
     setConfirmPass(true);
     e.preventDefault();
+
+    
     if (isSignUp) {
       data.password === data.confirmpass
         ? dispatch(signUp(data, navigate))
@@ -56,7 +58,7 @@ const Auth = () => {
         <img src={Logo} alt="" />
 
         <div className="Webname">
-          <h1>ZKC Media</h1>
+          <h1>Connect Sphere</h1>
           <h6>Explore the ideas throughout the world</h6>
         </div>
       </div>

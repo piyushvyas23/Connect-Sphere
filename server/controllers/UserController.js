@@ -95,6 +95,9 @@ export const followUser = async (req, res) => {
   const id = req.params.id;
   const { _id } = req.body;
   console.log(id, _id)
+
+  //_id--> Current User ID 
+  
   if (_id == id) {
     res.status(403).json("Action Forbidden");
   } else {
